@@ -1,5 +1,5 @@
 # Projeto Módulo 5
-Códigos desenvolvidos durante o módulo 5.(React)
+Códigos desenvolvidos durante o módulo 5.(React.js)
 
 ## Tema 
  
@@ -7,22 +7,22 @@ Códigos desenvolvidos durante o módulo 5.(React)
 
 ## Regra de Negócio
 
-    [Site para um pub-bar e eventos](vendas de bebidas, comidas)
+    [Site para um Pub](vendas de bebidas, comidas)
 
-- React.js
+ **- React.js**
 
     [documentação](https://pt-br.reactjs.org/docs/getting-started.html) |
     [video-extra](https://youtu.be/FXqX7oof0I4)
 
- - Node.js
+ **- Node.js**
 
     [documentação](https://nodejs.org/en/docs/)
     
- - CSS Grid
+ **- CSS Grid**
 
     [documentação](https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_Grid_Layout)
 
- - EXPRESS
+ **- EXPRESS**
 
     [documentação 1](http://expressjs.com/en/5x/api.html) |
     [documentação 2](https://www.npmjs.com/package/express)
