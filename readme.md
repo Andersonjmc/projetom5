@@ -30,12 +30,12 @@ Códigos desenvolvidos durante o módulo 5.(React.js)
 
 ## Colaboradores
 
-[Anderson](https://github.com/Andersonjmc),(https://www.linkedin.com/in/francisco-anderson-de-souza/)
+[Anderson](https://github.com/Andersonjmc)(https://www.linkedin.com/in/francisco-anderson-de-souza/)
 
-[Daniel](https://github.com/DanielBennesby),(https://www.linkedin.com/in/daniel-bennesby-986b8b16a/)
+[Daniel](https://github.com/DanielBennesby)(https://www.linkedin.com/in/daniel-bennesby-986b8b16a/)
 
-[Damasio](https://github.com/DamasioRamos),(https://www.linkedin.com/in/damasio-ramos-5b8377228/)
+[Damasio](https://github.com/DamasioRamos)(https://www.linkedin.com/in/damasio-ramos-5b8377228/)
 
-[Diego](https://github.com/diegoed1),(https://www.linkedin.com/in/diego-luz-da-silva-6b73461b2/)
+[Diego](https://github.com/diegoed1)(https://www.linkedin.com/in/diego-luz-da-silva-6b73461b2/)
 
-[Tulio](https://github.com/tuliorsc10),(https://www.linkedin.com/in/t%C3%BAlio-souza-2b2777113/)
+[Tulio](https://github.com/tuliorsc10)(https://www.linkedin.com/in/t%C3%BAlio-souza-2b2777113/)
