@@ -3,8 +3,10 @@ import "./styles.css"
 import { useCarrinhoContext } from "../../common/context/Carrinho";
 
 
+
+
 const Produto = ({TITULO, PRECO, INGREDIENTES, ID}) => {
-    const {carrinho, adicionaProduto} = useCarrinhoContext();
+    const {carrinho, adicionaProduto, removerProduto} = useCarrinhoContext();
     
     const pegaCarrinho = carrinho.find(itemNoCarrinho => itemNoCarrinho.ID === ID);
 
@@ -18,7 +20,8 @@ const Produto = ({TITULO, PRECO, INGREDIENTES, ID}) => {
                 <input type="button" placeholder="+" className="input" 
                 onClick={() => adicionaProduto({TITULO,PRECO,INGREDIENTES,ID})}></input>
                  {pegaCarrinho?.quantidade || 0}
-                <input type="button" placeholder="-" className="input__red"></input>
+                <input type="button" placeholder="-" className="input__red" 
+                onClick={() => removerProduto(ID)} disabled={!pegaCarrinho} ></input>
             </div>
         </div>
         

@@ -3,13 +3,14 @@ import { useEffect, useState } from "react"
 import Produto from "../../components/Produtos"
 import axios from "axios"
 import { UsuarioContext } from "../../common/context/Usuario"
+import { useNavigate } from "react-router-dom"
 
 // import {Container, Header, Lista} from './styles'
 
 
 function Sobremesa() {
   const [sobremesa, setSobremesa] = useState([])
-
+  const history = useNavigate()
 
   useEffect(() => {
     axios.get(`http://localhost:4001/sobremesa`)
@@ -41,8 +42,8 @@ function Sobremesa() {
           <h2>Olá {nome}</h2>
           <h2>Seu saldo é R${saldo}</h2>
         </div>
-        
-        
+        <button onClick={() => history ("/carrinho")}>Comprar</button>
+        <button onClick={() => history(-1)}>Voltar</button>
       </header>
       <div>
         <h2>
