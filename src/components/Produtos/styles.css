@@ -1,0 +1,11 @@
+.input {
+    display: flex;
+    width: 25px;
+    background: green;
+}
+
+.input__red {
+    display: flex;
+    width: 25px;
+    background: red;
+}
