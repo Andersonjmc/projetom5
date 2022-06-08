@@ -8,6 +8,15 @@ function Carrinho() {
     const {carrinho, valorTotalCarrinho} = useCarrinhoContext();
     const {saldo} = useContext(UsuarioContext)
     const history = useNavigate();
+
+    function saldoCliente(saldoCliente, valorDaCompra) {
+        if(saldoCliente < valorDaCompra) {
+            return `Saldo indisponível: R$ ${saldoCliente - valorDaCompra}`
+        } else {
+            return `R$ ${saldoCliente} - R$ ${valorDaCompra} = R$ ${saldoCliente - valorDaCompra}`
+        }
+    }
+    
     return (
         <div>
             <h1>Carrinho</h1>
@@ -19,11 +28,11 @@ function Carrinho() {
                 </div>
             <div>
                 <h2> Saldo: </h2>
-                <span> R$ {saldo.toFixed(2)}</span>
+                <span> R$ {saldo}</span>
             </div>
                 <div>
                     <h2> Saldo Total: </h2>
-                    <span> R$ {saldo.toFixed(2) - valorTotalCarrinho.toFixed(2)}</span>
+                    <span>{onchange= saldoCliente(saldo,valorTotalCarrinho)}</span>
                 </div>
             </div>
             
