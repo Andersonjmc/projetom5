@@ -45,6 +45,12 @@ function Login() {
               <button onClick={() => history("/cadastro")}>
                 Cadastrar Sobremesas
               </button>
+              <button onClick={() => history("/cadastroBebidas")}>
+                Cadastrar Bebidas
+              </button>
+              <button onClick={() => history("/deletaBebidas")}>
+                Deletar Bebidas
+              </button>
       </div>
     
   )
