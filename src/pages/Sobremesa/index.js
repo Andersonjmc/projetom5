@@ -4,6 +4,7 @@ import Produto from "../../components/Produtos"
 import axios from "axios"
 import { UsuarioContext } from "../../common/context/Usuario"
 import { useNavigate } from "react-router-dom"
+import index from "./index.module.css"
 
 // import {Container, Header, Lista} from './styles'
 
@@ -13,7 +14,7 @@ function Sobremesa() {
   const history = useNavigate()
 
   useEffect(() => {
-    axios.get(`http://localhost:4001/sobremesa`)
+    axios.get(`http://localhost:8000/sobremesa`)
     .then((response) => {
       const data = response.data.bancoSelecionado
       setSobremesa(data)
@@ -24,7 +25,7 @@ function Sobremesa() {
 
   
   function deletaPost(ID) {
-    axios.delete(`http://localhost:4001/sobremesa/${ID}`)
+    axios.delete(`http://localhost:8000/sobremesa/${ID}`)
     .then((response) => {
       console.log("está deletando")
       setSobremesa(sobremesa.filter(item => item.ID !== ID))
@@ -42,7 +43,7 @@ function Sobremesa() {
           <h2>Olá {nome}</h2>
           <h2>Seu saldo é R${saldo}</h2>
         </div>
-        <button onClick={() => history ("/carrinho")}>Comprar</button>
+        <button className={index.espaco} onClick={() => history ("/carrinho")}>Comprar</button>
         <button onClick={() => history(-1)}>Voltar</button>
       </header>
       <div>

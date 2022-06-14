@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import axios from "axios";
+import index from "./index.module.css"
 
 function Cadastro() {
 
@@ -9,7 +10,7 @@ function Cadastro() {
     const [pegaIngrediente, setPegaIngrediente] = useState('')
   
     function criaPost() {
-      axios.post('http://localhost:4001/sobremesa', {titulo: titulo, preco: pegaPreco, ingredientes: pegaIngrediente})
+      axios.post('http://localhost:8000/sobremesa', {titulo: titulo, preco: pegaPreco, ingredientes: pegaIngrediente})
       .then((response) => {
         const cadastro = response.data
         setPost(cadastro.ID)
@@ -17,7 +18,7 @@ function Cadastro() {
       }) 
     }
     return (
-        <div>
+        <div className={index.texto}>
         <div>
             <h1>
                 Cadastro

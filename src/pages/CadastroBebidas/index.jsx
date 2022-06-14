@@ -1,7 +1,7 @@
 import React,{useState} from "react";
 import { Label, Input,Legend } from "../../components/Form";
 import { postBebida } from "../../utils/axios";
-
+import bebidas from "./bebidas.module.css"
 
 export const CadastroBebidas = ()=>{
     
@@ -19,9 +19,9 @@ export const CadastroBebidas = ()=>{
     
     
     return (
-        <div>
+        <div  className={bebidas.container}>
          <div>
-          <form>
+          <form className={bebidas.padrao}>
             <Legend legend={'Cadastro de bebidas'}/>
             <Label nome={'Nome'}/>
             <Input type={'text'} name={"nome"} onChange={(event) => setNome(event.target.value)} />
@@ -33,14 +33,16 @@ export const CadastroBebidas = ()=>{
             <Input type={'text'} name={"tipo"} onChange ={(event) => setTipo(event.target.value)}/>
             <Label nome={'Url da imagem'}/>
             <Input type={'text'} name={"img"} onChange ={(event) => setImg(event.target.value)}/>
-            <aside>
-              <img src={img} alt="" srcset="" />
-            </aside>
             <Label nome={'Marca'}/>
             <Input type={'text'} name={"marca"} onChange ={(event) => setMarca(event.target.value)}/>
+            <button onClick={novaBebida}>Cadastre</button>  
           </form>   
-           <button onClick={novaBebida}>Cadastre</button>  
-         </div>
+          </div>
+           <div>
+           <aside>
+              <img srcSet={img} alt="bebidas" width="300px" />
+            </aside>
+           </div>
         </div>
     )
 }

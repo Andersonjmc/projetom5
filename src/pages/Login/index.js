@@ -2,17 +2,18 @@ import {UsuarioContext} from "../../common/context/Usuario"
 import {useContext} from "react"
 import {useNavigate} from "react-router-dom"
 import React from "react";
+import login from "./login.module.css"
 
 function Login() {
   const history = useNavigate();
   const {nome,setNome, saldo, setSaldo} = useContext(UsuarioContext);
   return (
-      <div>
-        <div>
+      <div className={login.centro}>
+        <div className={login.texto}>
               Insira o seu nome
               </div>
               <div>
-                <div>
+                <div className={login.nome}>
                   Nome
                 </div>
                 <input
@@ -22,7 +23,7 @@ function Login() {
                 />
               </div>
               <div>
-                <div>
+                <div class={login.nome}>
                   Saldo
                 </div>
                 <input
@@ -36,10 +37,8 @@ function Login() {
                   }
                 />
               </div>
-              <button
-                onClick={() => history("/sobremesa")}
-                
-                >
+              <button class={login.button}
+                onClick={() => history("/sobremesa")}>
                 Avançar
               </button>
               <button onClick={() => history("/cadastro")}>
@@ -51,6 +50,7 @@ function Login() {
               <button onClick={() => history("/deletaBebidas")}>
                 Deletar Bebidas
               </button>
+                          
       </div>
     
   )

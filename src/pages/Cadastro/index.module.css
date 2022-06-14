@@ -1,0 +1,19 @@
+* {
+    background-color: black;
+    color: #d5eeff;
+}
+
+.texto {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.imagem {
+    display: flex;
+    justify-content: flex-end;
+}
+
+input {
+    margin: 0px 10px;
+   }
+
