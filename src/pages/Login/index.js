@@ -8,7 +8,7 @@ function Login() {
   const history = useNavigate();
   const {nome,setNome, saldo, setSaldo} = useContext(UsuarioContext);
   return (
-      <div className={login.centro}>
+      <div className={login.container}>
         <div className={login.texto}>
               Insira o seu nome
               </div>
@@ -37,8 +37,8 @@ function Login() {
                   }
                 />
               </div>
-              <button class={login.button}
-                onClick={() => history("/sobremesa")}>
+              <div>
+              <button onClick={() => history("/sobremesa")}>
                 Avançar
               </button>
               <button onClick={() => history("/cadastro")}>
@@ -50,6 +50,7 @@ function Login() {
               <button onClick={() => history("/deletaBebidas")}>
                 Deletar Bebidas
               </button>
+              </div>
                           
       </div>
     

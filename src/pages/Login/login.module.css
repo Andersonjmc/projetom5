@@ -1,32 +1,33 @@
-.centro {
+.container {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
     }
 
 .texto {
-    margin: 20px 0px;
-    text-justify: auto;
     font-size: 25px;
     font-family: "Amita", sans-serif;
+    margin: 20px 10px;
 }
 
 .nome {
-    text-align: center;
-    margin: 10px 0px;
-}
+    margin-left: 12px;
+    font-size: 20px;
+    margin-top: 10px;
+    }
 
-.nome, input {
-    height: 20px;
+input {
     width: auto;
     border-radius: 5px;
+    height: auto;
+    }
+
+button{
+    align-items: center;
+    margin: 35px 10px 50px;
+    border: 1px solid #bc2525;
+    box-shadow: 2px 2px #bc2525;
+    border-radius: 5px;
+    padding: 10px;
 }
 
-.botao, button{
-    margin: 35px 0;
-    height: 30px;
-    width: auto;
-    border: 1px solid #a6e4e7;
-    border-radius: 5px;
-}
 
