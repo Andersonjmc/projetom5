@@ -37,7 +37,7 @@ function Sobremesa() {
   const {nome, saldo} = useContext(UsuarioContext)
   
   return (
-    <div className="App">
+    <div className={index.central}>
       <header>
         <div>
           <h2>Olá {nome}</h2>

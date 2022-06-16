@@ -1,5 +1,6 @@
 * {
-    background-color: black;
+    background-image: url("https://images3.alphacoders.com/276/276885.jpg");
+    background-attachment: fixed;
     color: #d5eeff;
 }
 
@@ -8,12 +9,7 @@
     text-align: center;
 }
 
-.imagem {
-    display: flex;
-    justify-content: flex-end;
-}
-
 input {
     margin: 0px 10px;
-   }
+     }
 
