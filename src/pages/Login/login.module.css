@@ -1,0 +1,33 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    }
+
+.texto {
+    font-size: 25px;
+    font-family: "Amita", sans-serif;
+    margin: 20px 10px;
+}
+
+.nome {
+    margin-left: 12px;
+    font-size: 20px;
+    margin-top: 10px;
+    }
+
+input {
+    width: auto;
+    border-radius: 5px;
+    height: auto;
+    }
+
+button{
+    align-items: center;
+    margin: 35px 10px 50px;
+    border: 1px solid #bc2525;
+    box-shadow: 2px 2px #bc2525;
+    border-radius: 5px;
+    padding: 10px;
+    }
+
+

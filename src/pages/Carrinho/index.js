@@ -2,7 +2,8 @@ import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { useCarrinhoContext } from "../../common/context/Carrinho";
 import { UsuarioContext } from "../../common/context/Usuario";
-import Produto from "../../components/Produtos"
+import Produto from "../../components/Produtos";
+import compra from "./compra.module.css";
 
 function Carrinho() {
     const {carrinho, valorTotalCarrinho} = useCarrinhoContext();
@@ -18,9 +19,9 @@ function Carrinho() {
     }
     
     return (
-        <div>
+        <div className={compra.titulo}>
             <h1>Carrinho</h1>
-            <button onClick={() => history(-1)}>Voltar</button>
+            <button className={compra.voltar} onClick={() => history(-1)}>Voltar</button>
             <div>
                 <div>
                     <h2>Total no Carrinho: </h2>

@@ -1,0 +1,15 @@
+* {
+    background-image: url("https://images3.alphacoders.com/276/276885.jpg");
+    background-attachment: fixed;
+    color: #d5eeff;
+}
+
+.texto {
+    margin-top: 50px;
+    text-align: center;
+}
+
+input {
+    margin: 0px 10px;
+     }
+
